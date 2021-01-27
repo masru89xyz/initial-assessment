@@ -11,6 +11,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import org.springframework.stereotype.Component;
 
@@ -42,7 +43,8 @@ public class TimeCalculation {
                 System.out.println("Invalid Date !!! " + ex.getMessage());
             }
         }
-        Collections.sort(output);
+        Comparator comparator = Collections.reverseOrder();
+        Collections.sort(output, comparator);
         return output;
     }
 }
