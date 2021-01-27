@@ -11,7 +11,7 @@
 Clone this code to your local using the following command
 
 ```bash
-git clone https://github.com/masru89xyz/simple-rest-apis.git
+git clone https://github.com/masru89xyz/initial-assessment.git
 ```
 
 ### Build the Application (Step:1)
@@ -30,6 +30,8 @@ Execute run-task2.sh script from project base directory
 ```bash
 ./run-task2.sh
 ```
+Ctrl+c to close the application
+
 From another terminal, Just execute this curl command to test task-2 api
 ```bash
 curl -X POST -H "Content-Type: text/plain" --data-binary @- http://localhost:8080/task23 <<EOF
@@ -42,7 +44,7 @@ EOF
 ```
 ### Execute Task-3 (Step:4)
 
-Execute run-task3.sh script from project base directory
+Execute run-task3.sh script from project base directory and make sure that Task-2 application has been closed otherwise port mapping expection will be occured
 ```bash
 ./run-task3.sh
 ```
@@ -56,3 +58,4 @@ Sat 02 May 2015 19:54:36 +0530
 Fri 01 May 2015 13:54:36 -0000
 EOF
 ```
+### Video Tutorial also available at video-tutorial directory
