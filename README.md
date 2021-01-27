@@ -4,11 +4,11 @@
 * Docker
 * Docker Compose
 * 8080 port must be free from where this application will be run
-* Linux machine (I don't have any Windows machine)
+* Linux machine (I don't have any Windows machine to test)
 
-### Cloning the code to your local
+### Cloning the code to your local machine
 
-Clone this code to your local using the following command
+Clone this code to your local machine using the following command
 
 ```bash
 git clone https://github.com/masru89xyz/initial-assessment.git
