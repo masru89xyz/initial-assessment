@@ -15,18 +15,18 @@ git clone https://github.com/masru89xyz/initial-assessment.git
 ```
 
 ### Build the Application (Step:1)
-Execute build-task.sh script from project base directory
+Execute build-task.sh script from project's blink-tasks directory
 ```bash
 ./build-task.sh
 ```
 ### Execute Task-1 (Step:2)
-Execute run-task1.sh script from project base directory and provide inputs one by one in a new line
+Execute run-task1.sh script from project's blink-tasks directory and provide inputs one by one in a new line
 ```bash
 ./run-task1.sh
 ```
 
 ### Execute Task-2 (Step:3)
-Execute run-task2.sh script from project base directory
+Execute run-task2.sh script from project's blink-tasks directory
 ```bash
 ./run-task2.sh
 ```
@@ -44,7 +44,7 @@ EOF
 ```
 ### Execute Task-3 (Step:4)
 
-Execute run-task3.sh script from project base directory and make sure that Task-2 application has been closed otherwise port mapping expection will be occured
+Execute run-task3.sh script from project's blink-tasks directory and make sure that Task-2 application has been closed otherwise port mapping expection will be occured
 ```bash
 ./run-task3.sh
 ```
