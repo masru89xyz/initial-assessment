@@ -1,1 +1,58 @@
-# initial-assessment
+### Pre-requisites
+* Java 11 or later version (must)
+* Maven  
+* Docker
+* Docker Compose
+* 8080 port must be free from where this application will be run
+* Linux machine (I don't have any Windows machine)
+
+### Cloning the code to your local
+
+Clone this code to your local using the following command
+
+```bash
+git clone https://github.com/masru89xyz/simple-rest-apis.git
+```
+
+### Build the Application (Step:1)
+Execute build-task.sh script from project base directory
+```bash
+./build-task.sh
+```
+### Execute Task-1 (Step:2)
+Execute run-task1.sh script from project base directory and provide inputs one by one in a new line
+```bash
+./run-task1.sh
+```
+
+### Execute Task-2 (Step:3)
+Execute run-task2.sh script from project base directory
+```bash
+./run-task2.sh
+```
+From another terminal, Just execute this curl command to test task-2 api
+```bash
+curl -X POST -H "Content-Type: text/plain" --data-binary @- http://localhost:8080/task23 <<EOF
+2
+Sun 10 May 2015 13:54:36 -0700
+Sun 10 May 2015 13:54:36 -0000
+Sat 02 May 2015 19:54:36 +0530
+Fri 01 May 2015 13:54:36 -0000
+EOF
+```
+### Execute Task-3 (Step:4)
+
+Execute run-task3.sh script from project base directory
+```bash
+./run-task3.sh
+```
+From another terminal, Just execute this curl command to test task-3 api 
+```bash
+curl -X POST -H "Content-Type: text/plain" --data-binary @- http://localhost:8080/task23 <<EOF
+2
+Sun 10 May 2015 13:54:36 -0700
+Sun 10 May 2015 13:54:36 -0000
+Sat 02 May 2015 19:54:36 +0530
+Fri 01 May 2015 13:54:36 -0000
+EOF
+```

@@ -1,0 +1,35 @@
+version: '3'
+services:
+  lb:
+    image: 'haproxy:2.1.3'
+    container_name: internal-lb
+    restart: always
+    ports:
+      - '8080:8080'
+    volumes:
+      - './configuration/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg'
+    links:
+      - task2-app1
+      - task2-app2
+    networks:
+      - env_net
+  
+  task2-app1:
+    build: .
+    container_name: app-c1
+    environment:
+      - node_id=90c01071-947c-4adc-a757-60e90757e7f3
+    networks:
+      - env_net
+
+  task2-app2:
+    build: .
+    container_name: app-c2
+    environment:
+      - node_id=876c00c2-b7ba-4327-844b-46c0699fe739
+    networks:
+      - env_net      
+      
+networks:
+  env_net:
+    driver: bridge
