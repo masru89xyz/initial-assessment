@@ -10,6 +10,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import org.springframework.stereotype.Component;
 
@@ -41,6 +42,7 @@ public class TimeCalculation {
                 System.out.println("Invalid Date !!! " + ex.getMessage());
             }
         }
+        Collections.sort(output);
         return output;
     }
 }
